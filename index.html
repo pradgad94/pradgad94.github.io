@@ -4,87 +4,256 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Pradyumna Gadepally</title>
+    <title>Pradyumna Gadepally | Data & AI</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 25px;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #ffffff;
+            color: #222222;
             line-height: 1.6;
-            color: #222;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-            justify-content: center;
-            text-align: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+
+        header {
+            padding: 90px 0 70px;
         }
 
         h1 {
-            font-size: 42px;
-            margin-bottom: 5px;
+            font-size: 52px;
+            line-height: 1.1;
+            margin: 0 0 12px;
+            letter-spacing: -1px;
         }
 
-        .subtitle {
+        .headline {
+            font-size: 23px;
+            color: #555555;
+            margin: 0 0 25px;
+        }
+
+        .intro {
+            max-width: 720px;
             font-size: 18px;
-            color: #555;
-            margin-bottom: 40px;
+            color: #444444;
+        }
+
+        .links {
+            margin-top: 25px;
+        }
+
+        .links a {
+            margin-right: 20px;
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 25px;
         }
 
         .profiles {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin: 30px 0 80px;
         }
 
-        .profile-card {
-            display: block;
-            width: 220px;
-            padding: 30px 20px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
+        .profile {
+            border: 1px solid #dddddd;
+            border-radius: 10px;
+            padding: 30px;
             text-decoration: none;
-            color: #222;
-            transition: border-color 0.15s, box-shadow 0.15s;
+            color: inherit;
+            transition: 0.2s ease;
         }
 
-        .profile-card:hover {
-            border-color: #2563eb;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+        .profile:hover {
+            border-color: #999999;
+            transform: translateY(-3px);
         }
 
-        .profile-card h2 {
-            margin: 0 0 8px;
-            font-size: 20px;
+        .profile h3 {
+            font-size: 23px;
+            margin: 0 0 12px;
+        }
+
+        .profile p {
+            color: #555555;
+            margin-bottom: 18px;
+        }
+
+        .profile .stack {
+            font-size: 14px;
+            color: #666666;
+        }
+
+        .arrow {
+            display: inline-block;
+            margin-top: 12px;
             color: #2563eb;
         }
 
-        .profile-card p {
-            margin: 0;
+        section {
+            margin-bottom: 70px;
+        }
+
+        .about {
+            max-width: 750px;
+        }
+
+        footer {
+            border-top: 1px solid #eeeeee;
+            padding: 35px 0 50px;
+            color: #777777;
             font-size: 14px;
-            color: #666;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                padding-top: 60px;
+            }
+
+            h1 {
+                font-size: 40px;
+            }
+
+            .profiles {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                padding: 0 20px;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <h1>Pradyumna Gadepally</h1>
-    <div class="subtitle">Choose a profile to view</div>
+    <div class="container">
 
-    <div class="profiles">
-        <a class="profile-card" href="ai/index.html">
-            <h2>AI / ML</h2>
-            <p>Machine Learning, LLMs, Computer Vision</p>
-        </a>
+        <header>
 
-        <a class="profile-card" href="data/index.html">
-            <h2>Data</h2>
-            <p>Data Engineering, ETL, Azure</p>
-        </a>
+            <h1>Pradyumna Gadepally</h1>
+
+            <p class="headline">
+                Data & AI Engineer
+            </p>
+
+            <p class="intro">
+                Engineer and researcher with a background in computer science,
+                machine learning and data engineering. I work across data,
+                cloud infrastructure, software engineering and applied AI.
+            </p>
+
+            <div class="links">
+                <a href="https://github.com/pradgad94" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+                <a href="resume.pdf">Resume</a>
+                <a href="mailto:YOUR_EMAIL">Email</a>
+            </div>
+
+        </header>
+
+
+        <section>
+
+            <h2>Explore my work</h2>
+
+            <div class="profiles">
+
+                <a class="profile" href="/data/">
+
+                    <h3>Data & Cloud Engineering</h3>
+
+                    <p>
+                        Data engineering, cloud infrastructure, ETL,
+                        backend development and CI/CD.
+                    </p>
+
+                    <div class="stack">
+                        Python · SQL · Azure · ETL · MongoDB ·
+                        PySpark · Docker · GitHub Actions
+                    </div>
+
+                    <span class="arrow">
+                        View profile →
+                    </span>
+
+                </a>
+
+
+                <a class="profile" href="/ai/">
+
+                    <h3>Data Science & AI</h3>
+
+                    <p>
+                        Machine learning, deep learning, computer vision,
+                        NLP and LLM-based applications.
+                    </p>
+
+                    <div class="stack">
+                        Python · Machine Learning · Deep Learning ·
+                        Computer Vision · NLP · LLMs
+                    </div>
+
+                    <span class="arrow">
+                        View profile →
+                    </span>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <section>
+
+            <h2>About</h2>
+
+            <div class="about">
+
+                <p>
+                    My background spans electronics and communication
+                    engineering, computer science and AI research, with
+                    professional experience across software and data
+                    engineering.
+                </p>
+
+                <p>
+                    I'm particularly interested in building practical
+                    systems that combine data, software engineering,
+                    cloud infrastructure and machine learning.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <footer>
+
+            © 2026 Pradyumna Gadepally
+
+        </footer>
+
     </div>
 
 </body>
